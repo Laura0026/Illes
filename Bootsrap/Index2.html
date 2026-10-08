@@ -1,211 +1,299 @@
-<!DOCTYPE html>
-<html lang="ca">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Illes Balears 🌴</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-          rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet">
 
-    <title>Illes Balears</title>
+<style>
+    body {
+        background: linear-gradient(135deg, #dff6ff, #fff4d6);
+        font-family: Arial, sans-serif;
+    }
 
-    <style>
-        body {
-            background-color: #f4f8fb;
-        }
+    .hero {
+        background: linear-gradient(135deg, #0077b6, #00b4d8);
+        color: white;
+        padding: 70px 20px;
+        border-radius: 0 0 40px 40px;
+        text-align: center;
+        box-shadow: 0 8px 25px rgba(0,0,0,.2);
+    }
 
-        .container {
-            max-width: 1100px;
-        }
+    .hero h1 {
+        font-size: 4rem;
+        font-weight: 900;
+        text-shadow: 4px 4px 0 #023e8a;
+    }
 
-        h1 {
-            color: #0d6efd;
-            margin-top: 30px;
-        }
+    .section-title {
+        font-weight: 900;
+        color: #023e8a;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
 
-        h2 {
-            color: #198754;
-            margin-top: 30px;
-        }
+    .card {
+        border: none;
+        border-radius: 25px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0,0,0,.12);
+        transition: transform .25s, box-shadow .25s;
+        height: 100%;
+    }
 
-        h3 {
-            color: #0d6efd;
-            margin-top: 15px;
-        }
+    .card:hover {
+        transform: translateY(-8px) rotate(-1deg);
+        box-shadow: 0 15px 30px rgba(0,0,0,.2);
+    }
 
-        .seccio {
-            background-color: white;
-            padding: 25px;
-            margin-bottom: 25px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            height: 100%;
-        }
+    .card img {
+        height: 230px;
+        object-fit: cover;
+    }
 
-        .seccio img {
-            width: 100%;
-            max-height: 300px;
-            object-fit: contain;
-            margin-top: 15px;
-            border-radius: 8px;
-        }
+    .card-body {
+        padding: 25px;
+    }
 
-        .gif {
-            max-width: 100%;
-            width: 500px;
-            height: auto;
-        }
+    .brainrot {
+        background: #ffdd00;
+        border: 5px solid #111;
+        border-radius: 25px;
+        padding: 25px;
+        margin: 50px 0;
+        text-align: center;
+        box-shadow: 8px 8px 0 #111;
+    }
 
-        ul {
-            padding-left: 25px;
-        }
-    </style>
-</head>
+    .brainrot img {
+        max-width: 100%;
+        border-radius: 20px;
+        margin: 10px;
+    }
 
-<body>
+    .island-list li {
+        margin-bottom: 8px;
+    }
 
-    <div class="container py-4">
+    footer {
+        margin-top: 60px;
+        padding: 30px;
+        background: #023e8a;
+        color: white;
+        text-align: center;
+    }
+</style>
+<!-- HERO -->
+<header class="hero">
+    <h1>🌴 ILLES BALEARS 🌊</h1>
+    <p class="lead">
+        Sol, platja, illes i una quantitat preocupant de brainrot.
+    </p>
+</header>
 
-        <!-- TÍTOL PRINCIPAL -->
-        <h1>Illes Balears</h1>
+<main class="container py-5">
 
-        <p>
-            Les <b>illes Gimnèsies</b> i les <b>illes Pitiüses</b> són el grup
-            d'arxipèlags que formen les <b>Illes Balears</b>.
+    <!-- INTRODUCCIÓ -->
+    <section>
+        <h2 class="section-title">🏝️ Què són les Illes Balears?</h2>
+
+        <p class="fs-5">
+            Les <b>Illes Gimnèsies</b> i les <b>Illes Pitiüses</b>
+            són els dos grans grups d'illes que formen l'arxipèlag de
+            les <b>Illes Balears</b>.
         </p>
+    </section>
 
-        <!-- ILLES GIMNÈSIES -->
-        <h2>Illes Gimnèsies</h2>
 
-        <p>
-            Illes més al nord-est de l'arxipèlag.
+    <!-- GIMNÈSIES -->
+    <section>
+        <h2 class="section-title">🌊 Illes Gimnèsies</h2>
+
+        <p class="fs-5">
+            Són les illes situades més al nord-est de l'arxipèlag.
         </p>
 
         <div class="row g-4">
 
-            <!-- IDEES PRINCIPALS -->
+            <!-- Idees principals -->
             <div class="col-md-6">
-                <div class="seccio">
-                    <h3>Idees principals</h3>
+                <div class="card">
+                    <img src="https://www.ibizaisla.es/wp-content/uploads/2017/10/islas-baleares-gimnesias-pitiusas.jpg"
+                         alt="Mapa de les Illes Balears">
 
-                    <p>
-                        Mallorca, Menorca i el subarxipèlag de Cabrera.
-                    </p>
+                    <div class="card-body">
+                        <h3>🗺️ Illes principals</h3>
 
-                    <img
-                        src="https://www.ibizaisla.es/wp-content/uploads/2017/10/islas-baleares-gimnesias-pitiusas.jpg"
-                        alt="Mapa de les Illes Balears"
-                        class="img-fluid">
+                        <p>
+                            Les principals Illes Gimnèsies són:
+                        </p>
+
+                        <ul class="island-list">
+                            <li>🏝️ Mallorca</li>
+                            <li>🏝️ Menorca</li>
+                            <li>🏝️ Cabrera i el seu subarxipèlag</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <!-- ILLOTS -->
+
+            <!-- Illots -->
             <div class="col-md-6">
-                <div class="seccio">
-                    <h3>Illots principals</h3>
+                <div class="card">
 
-                    <p>
-                        Dragonera, Conillera i Illa de l'Aire.
-                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Dragonera.jpg/640px-Dragonera.jpg"
+                         alt="Sa Dragonera">
 
-                    <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYvSgxz0FpZrd6qtCff-_jdv0TAk5JOATUGGR4BjetmZnEKga_6EyhmAI&s=10"
-                        alt="Illots de les Illes Balears"
-                        class="img-fluid">
+                    <div class="card-body">
+                        <h3>🪨 Illots principals</h3>
+
+                        <ul class="island-list">
+                            <li>🐉 Sa Dragonera</li>
+                            <li>🏝️ Sa Conillera</li>
+                            <li>🌊 Illa de l'Aire</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <!-- ORIGEN DEL NOM -->
+
+            <!-- Origen -->
             <div class="col-md-12">
-                <div class="seccio">
-                    <h3>Origen del nom</h3>
+                <div class="card">
+                    <div class="card-body">
+                        <h3>📜 Origen del nom</h3>
 
-                    <p>
-                        Prové del grec antic <i>Gymnesiai</i>, derivat de
-                        <i>gymnos</i> (despullat).
-                        Els grecs i fenicis els anomenaren així perquè els seus
-                        habitants lluitaven lleugers, com els foners.
-                    </p>
+                        <p>
+                            El nom <b>Gimnèsies</b> prové del grec antic
+                            <i>Gymnesiai</i>, relacionat amb
+                            <i>gymnos</i>, que significa "nu".
+                        </p>
 
-                    <img
-                        src="https://media.tenor.com/XIwOXZtmWucAAAAM/bouncy-car-yay.gif"
-                        alt="Gif"
-                        class="gif">
+                        <p>
+                            Els grecs i fenicis les varen anomenar així
+                            perquè, segons la tradició, els habitants
+                            lluitaven amb poca roba i eren famosos com
+                            a <b>foners</b>.
+                        </p>
+                    </div>
                 </div>
             </div>
 
         </div>
+    </section>
 
 
-        <!-- ILLES PITIÜSES -->
-        <h2>Illes Pitiüses</h2>
+    <!-- PITÜSES -->
+    <section>
+        <h2 class="section-title">🌴 Illes Pitiüses</h2>
 
-        <p>
-            Illes al sud-est de la península.
+        <p class="fs-5">
+            Les Pitiüses estan situades al sud-oest de l'arxipèlag.
         </p>
 
         <div class="row g-4">
 
-            <!-- ILLES PRINCIPALS -->
+            <!-- Illes principals -->
             <div class="col-md-6">
-                <div class="seccio">
-                    <h3>Illes principals</h3>
+                <div class="card">
+                    <div class="card-body">
+                        <h3>🏖️ Illes principals</h3>
 
-                    <p>
-                        Eivissa i Formentera.
-                    </p>
+                        <ul class="island-list">
+                            <li>🌴 Eivissa</li>
+                            <li>🏝️ Formentera</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <!-- ILLOTS DESTACATS -->
-            <div class="col-md-6">
-                <div class="seccio">
-                    <h3>Illots destacats</h3>
 
-                    <ul>
-                        <li>Conillera</li>
-                        <li>Es Vedrà</li>
-                        <li>Tagomago</li>
-                        <li>Espardell</li>
-                        <li>S'Espalmador</li>
-                    </ul>
+            <!-- Illots -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+
+                        <h3>🪨 Illots destacats</h3>
+
+                        <ul class="island-list">
+                            <li>🏝️ Conillera</li>
+                            <li>🌋 Es Vedrà</li>
+                            <li>🌴 Tagomago</li>
+                            <li>🌊 Espardell</li>
+                            <li>🏖️ S'Espalmador</li>
+                        </ul>
+
+                    </div>
                 </div>
             </div>
 
-            <!-- ORIGEN DEL NOM -->
-            <div class="col-md-6">
-                <div class="seccio">
-                    <h3>Origen del nom</h3>
 
-                    <p>
-                        Els navegants grecs els varen anomenar així pels densos
-                        boscs de pins carrascs que cobreixen les seves muntanyes.
-                    </p>
-                </div>
-            </div>
+            <!-- Origen -->
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
 
-            <!-- GIF -->
-            <div class="col-md-6">
-                <div class="seccio text-center">
-                    <h3>Per què aquest nom?</h3>
+                        <h3>📜 Per què es diuen Pitiüses?</h3>
 
-                    <p>
-                        El nom fa referència a la gran quantitat de pins que
-                        hi havia a les illes.
-                    </p>
+                        <p>
+                            El nom prové del grec antic
+                            <i>Pityûssai</i>, relacionat amb els
+                            <b>pins</b> que abundaven a les illes.
+                        </p>
 
-                    <img
-                        src="the-amazing-world-of-gumball.gif"
-                        alt="Gif de Gumball"
-                        class="gif">
+                        <p>
+                            Per això el nom està relacionat amb
+                            les illes cobertes de pins 🌲.
+                        </p>
+
+                    </div>
                 </div>
             </div>
 
         </div>
+    </section>
 
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ZONA BRAINROT -->
+    <section class="brainrot">
 
-</body>
-</html>
+        <h2>🧠 BRAINROT BALEAR 🧠</h2>
+
+        <p class="fs-4">
+            Quan el treball d'escola es converteix en una experiència
+            espiritual:
+        </p>
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-5">
+                <img src="https://media.tenor.com/XIwOXZtmWucAAAAM/bouncy-car-yay.gif"
+                     alt="GIF divertit">
+            </div>
+
+            <div class="col-md-5">
+                <img src="the-amazing-world-of-gumball.gif"
+                     alt="Gumball">
+            </div>
+
+        </div>
+
+        <h3 class="mt-4">
+            🗿 Mallorca + Menorca + Eivissa =
+            <b>SKIBIDI BALEARS</b>
+        </h3>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer>
+    <p class="mb-0">
+        🌴 Illes Balears 🌊 | Fet amb HTML + Bootstrap + una mica massa de brainrot 🧠
+    </p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
